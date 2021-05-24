@@ -3,7 +3,7 @@ import Styles from '../../styles/Ninjas.module.css'
 import Link from 'next/link'
 
 export const getStaticProps = async () => {
-    const res = await fetch('https://jsonplaceholder.typicode.com/users');
+    const res = await fetch("http://localhost:8000/ninjas");
     const data = await res.json();
 
     return {
@@ -29,6 +29,7 @@ const Ninjas = ({ninjas}) => {
                         </a>
                     </Link>
                 ))} 
+                <Link href="ninjas/create"><a className={Styles.btn}>Create New Ninja</a></Link>
             </div>
         </>
      );

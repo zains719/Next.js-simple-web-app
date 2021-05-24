@@ -8,3 +8,14 @@
   .single:hover {
     border-left: 8px solid #4979ff;
   }
+.btn {
+  display: block;
+  width: 150px;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: #4979ff;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
